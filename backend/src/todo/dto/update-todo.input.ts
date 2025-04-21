@@ -7,5 +7,11 @@ export class UpdateTodoInput extends PartialType(CreateTodoInput) {
   id: number;
 
   @Field({ nullable: true })
+  title?: string;
+
+  @Field({ nullable: true })
+  contents?: string;
+
+  @Field({ nullable: true })
   status?: 'PENDING' | 'COMPLETED';
 }
