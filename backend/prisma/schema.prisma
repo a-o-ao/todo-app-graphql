@@ -1,0 +1,23 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model todo {
+  id         Int         @id @default(autoincrement())
+  title      String      @db.VarChar(32)
+  contents   String?     @db.VarChar(256)
+  status     todo_status @default(PENDING)
+  created_at DateTime?   @default(now()) @db.Timestamp(6)
+  updated_at DateTime?   @default(now()) @db.Timestamp(6)
+}
+
+enum todo_status {
+  PENDING
+  COMPLETED
+}
