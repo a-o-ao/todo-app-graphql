@@ -5,7 +5,7 @@ import { UpdateTodoInput } from './dto/update-todo.input';
 
 @Injectable()
 export class TodoService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(private readonly prisma: PrismaService) { }
 
   create(createTodoInput: CreateTodoInput) {
     return this.prisma.todo.create({
@@ -16,7 +16,12 @@ export class TodoService {
   }
 
   findAll() {
-    return this.prisma.todo.findMany();
+    return this.prisma.todo.findMany({
+      orderBy: [
+        { status: 'asc' },
+        { updated_at: 'desc' },
+      ],
+    });
   }
 
   findOne(id: number) {
