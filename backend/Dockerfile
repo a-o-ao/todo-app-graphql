@@ -14,6 +14,8 @@ COPY . .
 # Build the application
 RUN npm run build
 
+RUN npx prisma generate
+
 # Stage 2: Production Stage
 FROM node:23-alpine
 
