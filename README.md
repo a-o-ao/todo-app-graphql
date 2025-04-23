@@ -12,10 +12,10 @@
 
 ## 主な使用技術
 
-![](https://img.shields.io/badge/Node.js-23.11.0-green) 
-![](https://img.shields.io/badge/Typescript-5.8.3-blue) 
+![](https://img.shields.io/badge/Node.js-22.14.0-green) 
+![](https://img.shields.io/badge/Typescript-5.8.3-green) 
 ![](https://img.shields.io/badge/NestJS-11.0.20-red) 
-<!-- Next.js 15.3 -->
+![](https://img.shields.io/badge/Next.js-15.3.1-blue)
 
 | Category | Technorogy Stack |
 | ---- | ----- |
@@ -33,8 +33,6 @@ TODO
 ```shell
 docker-compose up --build
 ```
-
-http://localhost:3000/
 
 ## Documentation
 
