@@ -7,7 +7,7 @@
 以下技術の自己学習のためにTODOアプリを作成しているところです
 - GraphQL
 - Next.js
-- Figma
+- Tailwind CSS
 - Github Actions
 
 ## 主な使用技術
@@ -20,7 +20,7 @@
 | Category | Technorogy Stack |
 | ---- | ----- |
 | バックエンド | TypeScript, NestJS, Prisma |
-| フロントエンド | TypeScript, Next.js |
+| フロントエンド | TypeScript, Next.js, Tailwind CSS 4, Storybook |
 | データベース | PostgreSQL 17.4 |
 | 環境構築 | Docker |
 | e2e テスト | jest, supertest |
