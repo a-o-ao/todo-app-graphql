@@ -1,4 +1,4 @@
-# TODOアプリ
+# [WIP] TODOアプリ (GrapjQL学習用)
 
 <!-- [![CI](https://github.com/microsoft/TypeScript/actions/workflows/ci.yml/badge.svg)](https://github.com/microsoft/TypeScript/actions/workflows/ci.yml) -->
 
@@ -37,4 +37,5 @@ docker-compose up --build
 ## Documentation
 
 - [要件定義書](./doc/要件定義.md)
+
 
